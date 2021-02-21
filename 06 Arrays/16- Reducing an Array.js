@@ -32,3 +32,21 @@ a = 15 --- c = 6 ---> a = 21
 
 Result 21
 */
+
+const integers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+const withFilterAndMap = integers
+  .filter(integer => integer % 2 === 0)
+  .map(integer => integer ** 2);
+
+console.log(withFilterAndMap); // [ 4, 16, 36, 64, 100 ]
+
+const withReduce = integers.reduce((acc, curr) => {
+  if (curr % 2 === 0) {
+    acc.push(curr ** 2);
+  }
+
+  return acc;
+}, []);
+
+console.log(withReduce);

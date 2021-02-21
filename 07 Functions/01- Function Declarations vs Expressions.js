@@ -23,7 +23,7 @@ Such a function can be anonymous; it does not have to have a name. For example, 
 */
 
 // Anonymous Function Expression
-let run = function () {
+let run = () => {
   console.log("run");
 };
 

@@ -18,17 +18,10 @@ let address3 = new Address('Rua Afonso Braz 505', 'São Paulo', '04511-011');
 function areEqual(address1, address2) {
     return address1.street === address2.street &&
     address1.city === address2.city &&
-    address1.zipCode === address2.zipCode; 
+    address1.zipCode === address2.zipCode;
 }
 
 console.log(areEqual(address1, address3));
-
-function areSame(address1, address2) { // Function to check if two objects are pointing to the same object. They are referencing the same object.
-    if (address1 === address2)
-        return true
-    else
-        return false
-}
 
 console.log(areSame(address1, address2));
 

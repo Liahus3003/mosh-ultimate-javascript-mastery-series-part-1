@@ -52,3 +52,21 @@ courses.sort(function compare(a, b) {
 });
 
 console.log(courses);
+
+var data = [
+    { first_nom: 'Lazslo', last_nom: 'Jamf'     },
+    { first_nom: 'Pig',    last_nom: 'Bodine'   },
+    { first_nom: 'Pirate', last_nom: 'Prentice' }
+];
+
+const sortLogic = (a, b) => {
+  if (a.first_nom < b.first_nom) {
+    return -1;
+  } else if (a.first_nom > b.first_nom) {
+    return 1;
+  } else {
+    return 0;
+  }
+}
+
+console.log(data.sort(sortLogic));
